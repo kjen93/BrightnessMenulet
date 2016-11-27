@@ -43,6 +43,10 @@ Monitors:
 +------------------+---------------+
 | Viseo 230Ws      |               | 
 +------------------+---------------+
+| Dell U2412M      |               |
++------------------+---------------+
+| ASUS VW202NR     |               |
++------------------+---------------+
 
 If you have tested your monitor(s) with this tool, please let me know whether or not it work and I will update this table.
 
