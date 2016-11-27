@@ -94,7 +94,10 @@
 }
 
 - (void)sliderUpdate:(NSSlider*)slider {
-    [[controls screenForDisplayID:slider.tag] setBrightness:[slider integerValue] byOutlet:slider];
+    NSEvent *currentEvent = [[NSApplication sharedApplication] currentEvent];
+    if (currentEvent.type == NSEventTypeLeftMouseUp) {
+        [[controls screenForDisplayID:slider.tag] setBrightness:[slider integerValue] byOutlet:slider];
+    }
 }
 
 - (IBAction)quit:(id)sender {
